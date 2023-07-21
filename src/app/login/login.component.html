@@ -1,0 +1,18 @@
+
+<form [formGroup]="usuario">
+    <div>
+    <label position="floating">Email</label>
+    <input formControlName="email" autocapitalize="off">
+    </div>
+    <label color="danger" >* El email no es válido.</label>
+    <div>
+    <label position="floating">Contraseña</label>
+    <input formControlName="password" type="password">
+    </div>
+    <label color="danger" >*La contraseña debe tener al menos 4
+    caracteres</label>
+    <div class="padding">
+    <button [disabled]="!usuario.valid" (click)="login()" type="submit" color="primary" expand="block">Login</button>
+    <button [disabled]="!usuario.valid" (click)="signin()" type="submit" color="secondary" expand="block">Dar de alta</button>
+    </div>
+    </form>

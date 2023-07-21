@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ejercicio-firebase-94254": {
+      "hosting": {
+        "Firebase": [
+          "ejercicio-firebase-94254"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ejercicio-firebase-94254"
+  }
+}
